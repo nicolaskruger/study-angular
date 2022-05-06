@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+
+type MyApp = 'compopnent' | 'interpolation'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  component: MyApp = 'compopnent';
+  aplication: MyApp  = 'interpolation'; 
   title = 'angular-create-component';
 }
