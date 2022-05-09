@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ComponentCliComponent } from './component-cli/component-cli.component';
 import { ManualComponent } from './manual/manual.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
+import { FormsModule, NgSelectOption } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
     InterpolationComponent
   ],
   imports: [
-    BrowserModule
+    FormsModule,
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
